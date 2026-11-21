@@ -1,3 +1,5 @@
+> **Voltide for Mac — early beta:** This fork contains an unofficial, incomplete macOS adaptation in [`macos/`](macos/README.md). The original Voltide was created by Joko (sdparklab) and contributors. The original license and copyright notice remain in `LICENSE`. The Mac beta is not endorsed by the upstream project and does not yet support all devices or features listed below.
+
 <p align="center">
   <img src="docs/icon.png" width="112" alt="Voltide">
 </p>
