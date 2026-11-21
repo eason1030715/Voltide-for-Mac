@@ -16,6 +16,18 @@ This is an incomplete early beta, not feature parity with the original Windows a
 
 The beta build targets **macOS 13 or newer on Apple silicon (arm64)**. The minimum OS version is a build target, not proof of testing every supported version. It is ad-hoc signed and **not notarized**, so Gatekeeper may warn or refuse it when downloaded. It is not an App Store build. App Sandbox, App Store review, additional devices, and Intel Macs have not been validated.
 
+## 首次開啟 / Opening the beta on macOS
+
+此測試版只有臨時簽章，**未經 Apple 公證**。macOS 無法確認它是否含有惡意軟體；請只在確認下載來源可信且檔案未遭竄改、並自行決定信任後繼續。
+
+1. 從本專案的 GitHub Release 下載 ZIP，解壓縮後嘗試開啟 `Voltide for Mac.app`。
+2. 若 macOS 因無法驗證開發者而阻擋，打開 **系統設定 → 隱私權與安全性**，向下捲至「安全性」，找到該 App 並選擇 **強制打開**（部分地區顯示「仍要打開」）。
+3. 按系統提示輸入 Mac 登入密碼，並確認打開。此按鈕通常在首次嘗試開啟後約一小時內出現；若已消失，可再嘗試打開一次。
+
+這會為該 App 建立例外，而非替它完成 Apple 公證。如果系統警告 App **已損壞、遭竄改、含惡意軟體或會損壞電腦**，不要強制開啟；請停止使用並重新確認檔案。操作介面因 macOS 版本而異。詳見 [Apple：在 Mac 上安全地開啟 App](https://support.apple.com/zh-tw/102445)。
+
+This beta is ad-hoc signed and **not notarized**. macOS cannot verify it is free of malware. Only if you trust its source and have checked that it has not been modified, try opening the app, then go to **System Settings → Privacy & Security → Security → Open Anyway** and follow the prompts. If macOS says the app is damaged, modified, contains malware, or will damage your computer, stop and verify the download rather than overriding the warning. See [Apple's instructions](https://support.apple.com/en-us/102445).
+
 ## Build
 
 Install Apple Command Line Tools, then from `macos/` run:
